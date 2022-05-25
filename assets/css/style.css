@@ -1,0 +1,143 @@
+.sidebar-100 {
+  height: 100% !important;
+}
+
+.navbar-collapse {
+  height: 100% !important;
+}
+
+.icons {
+  width: 20px;
+  height: 20px;
+}
+
+.bg-gradient-shippii {
+  background-image: linear-gradient(
+    195deg,
+    #5ad89b 0%,
+    #2bb673 100%
+  ) !important;
+}
+
+.brand-logo {
+  height: 72px;
+  width: auto;
+}
+
+.date-day-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #616161;
+}
+
+.featured-color-icon {
+  background-color: #2bb673 !important;
+}
+
+.subtitle-table {
+  font-size: 14px;
+}
+
+.table-shippii {
+  background-color: #2bb673;
+  color: #fffafa;
+}
+
+.btn-shippii-green {
+  padding: 0.3rem 0.5rem !important;
+  background-color: #2bb673;
+  margin-bottom: 0.6rem !important;
+  color: #fff;
+  border-radius: 10px !important;
+}
+
+.btn-shippii-orange {
+  padding: 0.3rem 0.5rem !important;
+  background-color: #f7941c;
+  margin-bottom: 0.6rem !important;
+  color: #fff;
+  border-radius: 10px !important;
+}
+
+.btn-shippii-green {
+  padding: 0.3rem 0.5rem !important;
+  background-color: #2bb673;
+  margin-bottom: 0.6rem !important;
+  color: #fff;
+  border-radius: 10px !important;
+}
+
+.btn-shippii-orange:hover {
+  color: #fff;
+}
+
+.btn-shippii-green:hover {
+  color: #fff;
+}
+
+.btn-shippii-grey {
+  padding: 0.3rem 0.5rem !important;
+  background-color: #f0f0f0;
+  margin-bottom: 0.6rem !important;
+  color: #333333;
+  border-radius: 10px !important;
+}
+
+.status-delivered {
+  color: #2bb673;
+}
+
+.title-how-it-works {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #333333;
+}
+
+.subtitle-how-it-works {
+  font-size: 0.85rem;
+  color: #828282;
+  line-height: 1.2;
+  letter-spacing: 0.25px;
+}
+
+.shippii-orange {
+  color: #f7941c !important;
+}
+
+.shippii-green {
+  color: #2bb673 !important;
+}
+
+.form-control-shippii {
+  background-color: #f4f5f7 !important;
+  padding: 0.5rem 1rem 0.5rem 0.5rem !important;
+}
+
+.form-label-shippii {
+  margin-bottom: 0;
+  color: #333740;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.title-h4 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.title-h5 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.checked {
+  color: #f7941c;
+}
