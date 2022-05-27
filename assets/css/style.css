@@ -141,3 +141,23 @@
 .checked {
   color: #f7941c;
 }
+
+.table-heading-shippii {
+  padding: 0.75rem 0.5rem !important;
+}
+
+.status-awaiting {
+  color:#f7941c;
+}
+
+.status-rejected {
+  color: #FF4F00;
+}
+
+.btn-search {
+  margin: 0 !important;
+  margin-left: 8px !important;
+  color: #fff !important;
+  background-color: #f7941c !important;
+  overflow:visible !important;
+}
