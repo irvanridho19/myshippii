@@ -53,6 +53,14 @@
 }
 
 .btn-shippii-orange {
+  padding: 0.75rem 1rem !important;
+  background-color: #f7941c;
+  margin-bottom: 0.6rem !important;
+  color: #fff;
+  border-radius: 10px !important;
+}
+
+.btn-shippii-orange-locker {
   padding: 0.3rem 0.5rem !important;
   background-color: #f7941c;
   margin-bottom: 0.6rem !important;
@@ -68,7 +76,7 @@
   border-radius: 10px !important;
 }
 
-.btn-shippii-orange:hover {
+.btn-shippii-orange-locker:hover {
   color: #fff;
 }
 
@@ -130,6 +138,14 @@
   color: #000000;
 }
 
+.title-h3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+}
+
 .title-h5 {
   font-style: normal;
   font-weight: 600;
@@ -154,10 +170,25 @@
   color: #FF4F00;
 }
 
+.status-requested {
+  color: #A4C815;
+}
+
 .btn-search {
   margin: 0 !important;
   margin-left: 8px !important;
   color: #fff !important;
   background-color: #f7941c !important;
   overflow:visible !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .insurance-mobile {
+    margin-top: 1.2rem;
+  }
+}
+
+.logo-modal {
+  height: 64px !important;
+  width: auto;
 }
