@@ -36,7 +36,7 @@
                                     <div class="nj-timepick"> \
                                         <div class="nj-timepick__panel">\
                                         <div class="nj-timepick__boxes-column nj-timepick__hours">\
-                                                '+ createBoxes("hours", 1, 12, 1, "hour") + '\
+                                                '+ createBoxes("hours", 8, 12, 8, "hour") + '\
                                         </div>\
                                         <div class="nj-timepick__boxes-column nj-timepick__minutes">\
                                                 '+ createBoxes("minutes", 0, 59, 0, "minute") + '\
