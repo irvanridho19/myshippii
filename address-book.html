@@ -7,7 +7,7 @@
     <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
     <link rel="icon" type="image/png" href="./assets/img/favicon.png">
     <title>
-        Warehouse | History
+        Address Book
     </title>
     <!--     Fonts and icons     -->
     <link rel="stylesheet" type="text/css"
@@ -89,9 +89,8 @@
                     </ul>
                 </div>
                 <li class="nav-item">
-                    <a class="nav-link text-white active bg-gradient-shippii" href="#collapseWarehouse"
-                        data-bs-toggle="collapse" data-bs-target="#collapseWarehouse" aria-expanded="false"
-                        aria-controls="collapseWarehouse">
+                    <a class="nav-link text-white" href="#collapseWarehouse" data-bs-toggle="collapse"
+                        data-bs-target="#collapseWarehouse" aria-expanded="false" aria-controls="collapseWarehouse">
                         <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                             <img src="./assets/img/icons/warehouse.png" class="w-100 icons" alt="Warehouse Icon">
                         </div>
@@ -225,7 +224,7 @@
                     </ul>
                 </div>
                 <li class="nav-item">
-                    <a class="nav-link text-white " href="./shippiimall.html">
+                    <a class="nav-link text-white" href="./shippiimall.html">
                         <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                             <img src="./assets/img/icons/mall.png" class="w-100 icons" alt="calculator Icon">
                         </div>
@@ -233,7 +232,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white " href="./calendar.html">
+                    <a class="nav-link text-white" href="./calendar.html">
                         <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                             <img src="./assets/img/icons/calendar.png" class="w-100 icons" alt="calculator Icon">
                         </div>
@@ -241,7 +240,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white " href="./address-book.html">
+                    <a class="nav-link text-white active bg-gradient-shippii" href="./address-book.html">
                         <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                             <img src="./assets/img/icons/address.png" class="w-100 icons" alt="calculator Icon">
                         </div>
@@ -293,9 +292,9 @@
                     <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
                         <li class="breadcrumb-item text-sm"><a class="opacity-5 text-dark" href="javascript:;">Pages</a>
                         </li>
-                        <li class="breadcrumb-item text-sm text-dark active" aria-current="page">Warehouse</li>
+                        <li class="breadcrumb-item text-sm text-dark active" aria-current="page">Address Book</li>
                     </ol>
-                    <h6 class="font-weight-bolder mb-0">Warehouse</h6>
+                    <h6 class="font-weight-bolder mb-0">Address Book</h6>
                 </nav>
                 <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
                     <div class="ms-md-auto pe-md-3 d-flex align-items-center">
@@ -409,12 +408,26 @@
         </nav>
         <!-- End Navbar -->
         <div class="container-fluid py-4">
-            <div class="row">
+            <div class="row d-flex align-items-center mt-4">
+                <div class="col-6 col-md-6">
+                    <div class="display-block">
+                        <input class="search-event" id="searchevent" type="text" name="search"
+                            placeholder="Search address..">
+                        <span class="ml-4">
+                            <button class="btn btn-search-event">Search</button>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-4 col-md-5">
+                    <a class="btn btn-add-event" type="button" href="./add-new-address.html">Add New Address</a>
+                </div>
+            </div>
+            <div class="row mt-4">
                 <div class="col-12">
                     <div class="card my-4">
                         <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
                             <div class="bg-gradient-shippii border-radius-lg pt-4 pb-3">
-                                <h6 class="text-white text-capitalize ps-3">Warehouse - Active Orders</h6>
+                                <h6 class="text-white text-capitalize ps-3">Address Book</h6>
                             </div>
                         </div>
                         <div class="card-body px-0 pb-2">
@@ -424,104 +437,73 @@
                                         <tr>
                                             <th
                                                 class="text-uppercase text-secondary text-sm font-weight-bolder opacity-7 ps-2">
-                                                Order ID</th>
+                                                Address Name</th>
                                             <th
                                                 class="text-uppercase text-secondary text-sm font-weight-bolder opacity-7 ps-2">
-                                                Item(s)</th>
+                                                Street Address</th>
                                             <th
                                                 class="text-uppercase text-secondary text-sm font-weight-bolder opacity-7 ps-2">
-                                                From</th>
+                                                Contact Number</th>
                                             <th
                                                 class="text-uppercase text-secondary text-sm font-weight-bolder opacity-7 ps-2">
-                                                Order Number</th>
+                                                Country</th>
                                             <th
                                                 class="text-uppercase text-secondary text-sm font-weight-bolder opacity-7 ps-2">
-                                                Status</th>
-                                            <th
-                                                class="text-uppercase text-secondary text-sm font-weight-bolder opacity-7 ps-2">
-                                                Message</th>
+                                                Email</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
                                             <td>
                                                 <div class="d-flex align-items-center text-sm font-weight-bold">
-                                                    #1832412
+                                                    Home
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class="d-flex align-items-center text-sm">
-                                                    T-Shirt
+                                                    Street Name
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class="d-flex align-items-center text-sm">
-                                                    Zara
+                                                    +27 828182
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class="d-flex align-items-center text-sm">
-                                                    64253253
+                                                    South Africa
                                                 </div>
                                             </td>
                                             <td>
-                                                <div class="d-flex align-items-center status-delivered" role="alert">
-                                                    <svg class="bi flex-shrink-0 me-2" width="16" height="16" role="img"
-                                                        aria-label="Success:">
-                                                        <use xlink:href="#check-circle-fill" />
-                                                    </svg>
-                                                    <div class="text-sm">
-                                                        Delivered
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="d-flex align-items-center">
-                                                    <button type="button" class="text-xs btn btn-shippii-grey"
-                                                        data-bs-toggle="modal"
-                                                        data-bs-target="#messageModal">Read</button>
+                                                <div class="d-flex align-items-center text-sm">
+                                                    mail@mail.com
                                                 </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
                                                 <div class="d-flex align-items-center text-sm font-weight-bold">
-                                                    #1832412
+                                                    Office
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class="d-flex align-items-center text-sm">
-                                                    Ring
+                                                    Street Name
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class="d-flex align-items-center text-sm">
-                                                    Tiffany & co
+                                                    +27 828182
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class="d-flex align-items-center text-sm">
-                                                    276635531
+                                                    South Africa
                                                 </div>
                                             </td>
                                             <td>
-                                                <div class="d-flex align-items-center status-rejected" role="alert">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                        fill="currentColor" class="bi bi-backspace-fill me-2"
-                                                        viewBox="0 0 16 16">
-                                                        <path
-                                                            d="M15.683 3a2 2 0 0 0-2-2h-7.08a2 2 0 0 0-1.519.698L.241 7.35a1 1 0 0 0 0 1.302l4.843 5.65A2 2 0 0 0 6.603 15h7.08a2 2 0 0 0 2-2V3zM5.829 5.854a.5.5 0 1 1 .707-.708l2.147 2.147 2.146-2.147a.5.5 0 1 1 .707.708L9.39 8l2.146 2.146a.5.5 0 0 1-.707.708L8.683 8.707l-2.147 2.147a.5.5 0 0 1-.707-.708L7.976 8 5.829 5.854z" />
-                                                    </svg>
-                                                    <div class="text-sm">
-                                                        Rejected
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="d-flex align-items-center">
-                                                    <button type="button" class="text-xs btn btn-shippii-grey"
-                                                        data-bs-toggle="modal"
-                                                        data-bs-target="#messageModal">Read</button>
+                                                <div class="d-flex align-items-center text-sm">
+                                                    mail@mail.com
                                                 </div>
                                             </td>
                                         </tr>
