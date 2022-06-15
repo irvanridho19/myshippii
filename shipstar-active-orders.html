@@ -439,9 +439,6 @@
                                                 Status</th>
                                             <th
                                                 class="text-uppercase text-secondary text-sm font-weight-bolder opacity-7 ps-2">
-                                                Arrival Date</th>
-                                            <th
-                                                class="text-uppercase text-secondary text-sm font-weight-bolder opacity-7 ps-2">
                                                 Read Message</th>
                                         </tr>
                                     </thead>
@@ -478,11 +475,6 @@
                                                     <div class="text-sm">
                                                         Requested
                                                     </div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="d-flex align-items-center text-sm">
-                                                    -
                                                 </div>
                                             </td>
                                             <td>
@@ -528,11 +520,6 @@
                                                 </div>
                                             </td>
                                             <td>
-                                                <div class="d-flex align-items-center text-sm">
-                                                    22/04/2022
-                                                </div>
-                                            </td>
-                                            <td>
                                                 <div class="d-flex align-items-center">
                                                     <button type="button" class="text-xs btn btn-shippii-grey"
                                                         data-bs-toggle="modal"
@@ -569,21 +556,37 @@
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title font-weight-normal" id="messageModalLabel">Message From MyShippii</h5>
-                        <button type="button" class="btn-close text-dark" data-bs-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
+                      <h5
+                        class="modal-title font-weight-normal"
+                        id="messageModalLockerLabel"
+                      >
+                        Message From MyShippii
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close text-dark"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
                     </div>
                     <div class="modal-body">
-                        <div class="input-group input-group-outline my-3">
-                            <label class="form-label">Your Item(s) successfully delivered! Thank you.</label>
-                            <input type="email" class="form-control" disabled>
-                        </div>
+                      <div class="alert alert-warning text-white" role="alert">
+                        <strong>Shippii!!</strong> Your item(s) ready. Please take next
+                        action to finish your order.
+                      </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn bg-gradient-secondary" data-bs-dismiss="modal">Close</button>
+                      <button
+                        type="button"
+                        class="btn bg-gradient-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
                     </div>
-                </div>
+                  </div>
             </div>
         </div>
     </main>
