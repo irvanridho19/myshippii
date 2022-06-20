@@ -208,7 +208,17 @@
                                     <img src="./assets/img/icons/calculator.png" class="w-100 icons"
                                         alt="Calculator Icon">
                                 </div>
-                                <span class="nav-link-text ms-1">Estimate Shipping<br />Cost</span>
+                                <span class="nav-link-text ms-1">Shipping Calculator</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="collective.html" class="nav-link text-white">
+                                <div
+                                    class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                                    <img src="./assets/img/icons/calculator.png" class="w-100 icons"
+                                        alt="Calculator Icon">
+                                </div>
+                                <span class="nav-link-text ms-1">Collective Calculator</span>
                             </a>
                         </li>
                         <li class="nav-item">
@@ -248,6 +258,14 @@
                     </a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link text-white" href="shippii-address.html">
+                      <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                        <i class="material-icons opacity-10">house</i>
+                      </div>
+                      <span class="nav-link-text ms-1">Shippii Address</span>
+                    </a>
+                  </li>
+                <li class="nav-item">
                     <a class="nav-link text-white " href="profile.html">
                         <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                             <img src="./assets/img/icons/profile.png" class="w-100 icons" alt="calculator Icon">
@@ -274,7 +292,7 @@
             </ul>
         </div>
     </aside>
-    <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
+    <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg" id="calculator">
         <!-- Navbar -->
         <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl" id="navbarBlur"
             navbar-scroll="true">
@@ -419,7 +437,7 @@
                     <div class="row">
                         <div class="col-12 d-flex align-items-center">
                             <div class="title-how-it-works me-2 shippii-green">
-                                Estimate Cost Shipping
+                                Shipping Calculator
                             </div>
                         </div>
                         <div class="col-12 mt-4 text-sm">
@@ -428,237 +446,256 @@
                         <div class="col-12 col-md-6">
                             <hr>
                         </div>
-                        <form action="submit" method="get">
-                            <div class="row">
-                                <div class="col-12 col-md-6">
-                                    <div class="row">
-                                    <div class="mt-4">
-                                        <label for="address-book" class="form-label-shippii">Please select the country
-                                            the parcel is going to</label>
-                                        <select class="form-select form-control-shippii" aria-label="address-book">
-                                            <option selected class="option-select">Choose Country</option>
-                                            <option value="1" class="option-select">Estiwana</option>
-                                            <option value="1" class="option-select">Botswana</option>
-                                            <option value="1" class="option-select">Namibia</option>
-                                            <option value="1" class="option-select">South Africa</option>
-                                        </select>
+
+                        <!-- MODAL -->
+                        <div class="modal fade" id="calculatorModal" tabindex="-1" role="dialog"
+                            aria-labelledby="calculatorModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <img src="./assets/img/logos/logo-shippii.png" alt="Logo" class="logo-modal">
+                                        <button type="button" class="btn-close text-dark" data-bs-dismiss="modal"
+                                            aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
                                     </div>
-                                    <div class="mt-4">
-                                        <label for="address-book" class="form-label-shippii">Choose City</label>
-                                        <select class="form-select form-control-shippii" aria-label="address-book">
-                                            <option selected class="option-select">Choose City</option>
-                                            <option value="1" class="option-select">A</option>
-                                            <option value="1" class="option-select">B</option>
-                                            <option value="1" class="option-select">C</option>
-                                            <option value="1" class="option-select">D</option>
-                                        </select>
+                                    <div class="modal-body">
+                                        <div class="text-center">
+                                            <div class="title-h5">
+                                                Shipping Cost Estimate Calculator
+                                            </div>
+                                            <hr>
+                                        </div>
+                                        <div class="row d-flex justify-content-center align-items-center">
+                                            <div class="col-6 col-md-6">
+                                                <div class="title-h5">
+                                                    Shipping Cost
+                                                </div>
+                                                <span>to Botswana</span>
+                                            </div>
+                                            <div class="col-6 col-md-6">
+                                                <div class="title-h4">
+                                                    R 300
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row d-flex justify-content-center align-items-center">
+                                            <div class="col-6 col-md-6">
+                                                <div class="title-h5">
+                                                    Customs Declarations Cost
+                                                </div>
+                                            </div>
+                                            <div class="col-6 col-md-6">
+                                                <div class="title-h4">
+                                                    R 100
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row d-flex justify-content-center align-items-center">
+                                            <div class="col-6 col-md-6">
+                                                <div class="title-h5">
+                                                    Customs VAT Cost
+                                                </div>
+                                            </div>
+                                            <div class="col-6 col-md-6">
+                                                <div class="title-h4">
+                                                    R 100
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row d-flex justify-content-center align-items-center mt-4">
+                                            <div class="col-6 col-md-6">
+                                                <div class="title-h3">
+                                                    TOTAL
+                                                </div>
+                                            </div>
+                                            <div class="col-6 col-md-6">
+                                                <div class="title-h3 shippii-orange">
+                                                    R 500
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="text-sm text-center font-italic mt-6">
+                                            *Tip if you have more than parcel going to the same
+                                            delivery
+                                            address, consolidate them in your LOCKER to save on
+                                            Shipping
+                                            Fees.
+                                        </div>
+                                        <div class="text-sm text-center font-italic mt-2">
+                                            *this is an estimate and fees may be different on actual
+                                            invoice.
+                                        </div>
                                     </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn bg-gradient-secondary"
+                                            data-bs-dismiss="modal">Close</button>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                        <!-- MODAL END -->
+
+                        <div class="mt-4">
+                            <form action="submit" method="get">
                                 <div class="row">
                                     <div class="col-12 col-md-6">
                                         <div class="row">
-                                            <div class="col-12 col-md-6">
-                                                <div class="mt-4">
-                                                    <label for="length" class="form-label-shippii">Length</label>
-                                                    <div class="input-group input-group-outline">
-                                                        <input type="number" class="form-control"
-                                                            placeholder="Centimeter">
-                                                    </div>
-                                                </div>
+                                            <div class="mt-4">
+                                                <label for="address-book" class="form-label-shippii">Please
+                                                    select
+                                                    the
+                                                    country
+                                                    the parcel is going to</label>
+                                                <select class="form-select form-control-shippii"
+                                                    aria-label="address-book">
+                                                    <option selected class="option-select">Choose Country
+                                                    </option>
+                                                    <option value="1" class="option-select">Estiwana</option>
+                                                    <option value="1" class="option-select">Botswana</option>
+                                                    <option value="1" class="option-select">Namibia</option>
+                                                    <option value="1" class="option-select">South Africa
+                                                    </option>
+                                                </select>
                                             </div>
-                                            <div class="col-12 col-md-6">
-                                                <div class="mt-4">
-                                                    <label for="width" class="form-label-shippii">Width</label>
-                                                    <div class="input-group input-group-outline">
-                                                        <input type="number" class="form-control"
-                                                            placeholder="Centimeter">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-md-6">
-                                                <div class="mt-4">
-                                                    <label for="height" class="form-label-shippii">Height</label>
-                                                    <div class="input-group input-group-outline">
-                                                        <input type="number" class="form-control"
-                                                            placeholder="Centimeter">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-md-6">
-                                                <div class="mt-4">
-                                                    <label for="weight" class="form-label-shippii">Weight</label>
-                                                    <div class="input-group input-group-outline">
-                                                        <input type="number" class="form-control"
-                                                            placeholder="Kilograms">
-                                                    </div>
-                                                </div>
+                                            <div class="mt-4">
+                                                <label for="address-book" class="form-label-shippii">Choose
+                                                    City</label>
+                                                <select class="form-select form-control-shippii"
+                                                    aria-label="address-book">
+                                                    <option selected class="option-select">Choose City</option>
+                                                    <option value="1" class="option-select">A</option>
+                                                    <option value="1" class="option-select">B</option>
+                                                    <option value="1" class="option-select">C</option>
+                                                    <option value="1" class="option-select">D</option>
+                                                </select>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-12 col-md-12">
-                                        <div class="title-h5 mt-4">
-                                            Customs Declaration
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-md-6">
-                                        <div class="mt-2">
-                                            <label for="total-invoice" class="form-label-shippii">Number of Purchase
-                                                Invoices</label>
-                                            <div class="input-group input-group-outline">
-                                                <input type="text" class="form-control"
-                                                    placeholder="Up to 100 Invoices">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-12 col-md-12">
-                                        <div class="title-h5 mt-4">
-                                            Customs VAT
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-md-6">
-                                        <div class="mt-2">
-                                            <label for="total-invoice" class="form-label-shippii">Total Invoice
-                                                Value</label>
-                                            <div class="input-group input-group-outline">
-                                                <input type="text" class="form-control"
-                                                    placeholder="Insert the total value of invoices">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row mt-4">
-                                    <div class="col-12 col-md-3">
-                                        <div class="alert shippii-orange text-white" role="alert">
-                                            <strong>Eswatini Declaration</strong>
-                                        </div>
-                                        <div class="alert" role="alert">
-                                            Individual: R155.00
-                                            <br>Commercial: R220.00
-                                            <br>VAT: 15%
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-md-3">
-                                        <div class="alert shippii-orange text-white" role="alert">
-                                            <strong>Botswana Declaration</strong>
-                                        </div>
-                                        <div class="alert" role="alert">
-                                            tax/import/export invoice: R220.00
-                                            <br>No tax/import/export/:R290.00
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-md-3">
-                                        <div class="alert shippii-orange text-white" role="alert">
-                                            <strong>Namibia</strong>
-                                        </div>
-                                        <div class="alert" role="alert">
-                                            TBC
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col 12 col-md-6">
-                                    <div class="mt-6">
-                                        <a href="#" class="btn w-100 btn-shippii-orange px-4" type="submit"
-                                            data-bs-toggle="modal" data-bs-target="#calculatorModal">
-                                            GET AN ESTIMATE
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <!-- MODAL -->
-                                <div class="modal fade" id="calculatorModal" tabindex="-1" role="dialog"
-                                    aria-labelledby="calculatorModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-centered" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <img src="./assets/img/logos/logo-shippii.png" alt="Logo"
-                                                    class="logo-modal">
-                                                <button type="button" class="btn-close text-dark"
-                                                    data-bs-dismiss="modal" aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <div class="text-center">
-                                                    <div class="title-h5">
-                                                        Shipping Cost Estimate Calculator
-                                                    </div>
-                                                    <hr>
-                                                </div>
-                                                <div class="row d-flex justify-content-center align-items-center">
-                                                    <div class="col-6 col-md-6">
-                                                        <div class="title-h5">
-                                                            Shipping Cost
-                                                        </div>
-                                                        <span>to Botswana</span>
-                                                    </div>
-                                                    <div class="col-6 col-md-6">
-                                                        <div class="title-h4">
-                                                            R 300
+                                    <div class="row">
+                                        <div class="col-12 col-md-6">
+                                            <div class="row">
+                                                <div class="col-12 col-md-6">
+                                                    <div class="mt-4">
+                                                        <label for="length" class="form-label-shippii">Length</label>
+                                                        <div class="input-group input-group-outline">
+                                                            <input type="number" class="form-control"
+                                                                placeholder="Centimeter">
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <hr>
-                                                <div class="row d-flex justify-content-center align-items-center">
-                                                    <div class="col-6 col-md-6">
-                                                        <div class="title-h5">
-                                                            Customs Declarations Cost
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-6 col-md-6">
-                                                        <div class="title-h4">
-                                                            R 100
+                                                <div class="col-12 col-md-6">
+                                                    <div class="mt-4">
+                                                        <label for="width" class="form-label-shippii">Width</label>
+                                                        <div class="input-group input-group-outline">
+                                                            <input type="number" class="form-control"
+                                                                placeholder="Centimeter">
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <hr>
-                                                <div class="row d-flex justify-content-center align-items-center">
-                                                    <div class="col-6 col-md-6">
-                                                        <div class="title-h5">
-                                                            Customs VAT Cost
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-6 col-md-6">
-                                                        <div class="title-h4">
-                                                            R 100
+                                                <div class="col-12 col-md-6">
+                                                    <div class="mt-4">
+                                                        <label for="height" class="form-label-shippii">Height</label>
+                                                        <div class="input-group input-group-outline">
+                                                            <input type="number" class="form-control"
+                                                                placeholder="Centimeter">
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <hr>
-                                                <div class="row d-flex justify-content-center align-items-center mt-4">
-                                                    <div class="col-6 col-md-6">
-                                                        <div class="title-h3">
-                                                            TOTAL
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-6 col-md-6">
-                                                        <div class="title-h3 shippii-orange">
-                                                            R 500
+                                                <div class="col-12 col-md-6">
+                                                    <div class="mt-4">
+                                                        <label for="weight" class="form-label-shippii">Weight</label>
+                                                        <div class="input-group input-group-outline">
+                                                            <input type="number" class="form-control"
+                                                                placeholder="Kilograms">
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <hr>
-                                                <div class="text-sm text-center font-italic mt-6">
-                                                    *Tip if you have more than parcel going to the same delivery address, consolidate them in your LOCKER to save on Shipping Fees.
-                                                </div>
-                                                <div class="text-sm text-center font-italic mt-2">
-                                                    *this is an estimate and fees may be different on actual invoice.
-                                                </div>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn bg-gradient-secondary"
-                                                    data-bs-dismiss="modal">Close</button>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                        </form>
+                                    <div class="row">
+                                        <div class="col-12 col-md-12">
+                                            <div class="title-h5 mt-4">
+                                                Customs Declaration
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <div class="mt-2">
+                                                <label for="total-invoice" class="form-label-shippii">Number of
+                                                    Purchase
+                                                    Invoices</label>
+                                                <div class="input-group input-group-outline">
+                                                    <input type="text" class="form-control"
+                                                        placeholder="Up to 100 Invoices">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 col-md-12">
+                                            <div class="title-h5 mt-4">
+                                                Customs VAT
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <div class="mt-2">
+                                                <label for="total-invoice" class="form-label-shippii">Total
+                                                    Invoice
+                                                    Value</label>
+                                                <div class="input-group input-group-outline">
+                                                    <input type="text" class="form-control"
+                                                        placeholder="Insert the total value of invoices">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-4">
+                                        <div class="col-12 col-md-3">
+                                            <div class="alert shippii-orange text-white" role="alert">
+                                                <strong>Eswatini Declaration</strong>
+                                            </div>
+                                            <div class="alert" role="alert">
+                                                Individual: R155.00
+                                                <br>Commercial: R220.00
+                                                <br>VAT: 15%
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-3">
+                                            <div class="alert shippii-orange text-white" role="alert">
+                                                <strong>Botswana Declaration</strong>
+                                            </div>
+                                            <div class="alert" role="alert">
+                                                tax/import/export invoice: R220.00
+                                                <br>No tax/import/export/:R290.00
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-3">
+                                            <div class="alert shippii-orange text-white" role="alert">
+                                                <strong>Namibia</strong>
+                                            </div>
+                                            <div class="alert" role="alert">
+                                                TBC
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col 12 col-md-6">
+                                        <div class="mt-6">
+                                            <a href="#" class="btn w-100 btn-shippii-orange px-4" type="submit"
+                                                data-bs-toggle="modal" data-bs-target="#calculatorModal">
+                                                GET AN ESTIMATE
+                                            </a>
+                                        </div>
+                                    </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
+
                 <footer class="footer py-4  ">
                     <div class="container-fluid">
                         <div class="row align-items-center justify-content-lg-between">
@@ -699,7 +736,7 @@
                     backgroundColor: "rgba(255, 255, 255, .8)",
                     data: [50, 20, 10, 22, 50, 10, 40],
                     maxBarThickness: 6
-                },],
+                }, ],
             },
             options: {
                 responsive: true,
